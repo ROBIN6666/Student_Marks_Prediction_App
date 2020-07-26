@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Student Marks Prediction</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+<div class="content">
+        <h2 class="text-center">Marks Scored</h2>
+        <div class="form">
+            <form action="{{url_for('index')}}"method="POST">
+                <input class="form-input" type="text" name="content" id="content" placeholder="Enter Your Study hours"><br>
+                <button class="btn btn-sm btn-dark">Submit</button>
+                 <h2 class="text-wenter" style="color:red;">{{pedicted}}</h2>
+            </form>
+        </div>
+
+</div>
+<footer class="background">
+    <p class="text-footer">
+        Copyright &copy; 2020 -www.AI.com All rights reserved
+    </p>
+</footer>
+
+
+ </body>
+</html>
